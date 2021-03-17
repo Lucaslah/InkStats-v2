@@ -1,6 +1,6 @@
 {
     "name": "inkstats-v2",
-    "version": "1.1.2",
+    "version": "2.0.0",
     "main": "./dist/cli.js",
     "bin": "./dist/cli.js",
     "license": "ISC",
