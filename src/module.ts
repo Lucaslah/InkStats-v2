@@ -11,11 +11,11 @@ export class InkStats {
     /**
      * The Port for your InkStats Instance to Run On
      */
-    private port: number | undefined = 8080
+    public port: number | undefined = 8080
     /**
      * A Message to be logged to your Console when your InkStats Instance Starts
      */
-    private message: string | undefined = undefined
+   public message: string | undefined = undefined
     /**
      * Sets the Title of your InkStats Instance, It will show on your InkStats Home Page
      */
