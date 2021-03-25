@@ -35,11 +35,12 @@
 
 ### Requirements
 - `npm` or `yarn`
-- Nodejs
+- Nodejs v12 +
 
 ### Installing Globlly
 - npm: `npm i -g inkstats-v2`
 - yarn: `yarn add globle inkstats-v2`
+- Shell Script (Coming soon)
 
 ### Installing as a Module
 - npm: `npm i --save inkstats-v2`
@@ -53,6 +54,11 @@
 - Platform
 - Computer Uptime
 - More Coming soon
+
+## Upcomimg Feachers
+- `stats` command, it will show you computer stats on you command line
+- Module Update, use the module to easly get computer stats in your nodejs project
+- A few other random feachers
 
 ## Getting Started: CLI
 1. Install InkStats v2 [See Installing Globlly](#installing-globlly)
