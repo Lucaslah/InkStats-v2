@@ -2,6 +2,7 @@
     "name": "inkstats-v2",
     "version": "2.0.0",
     "main": "./dist/index.js",
+    "types": "index.d.ts",
     "bin": "./dist/cli.js",
     "license": "ISC",
     "devDependencies": {
