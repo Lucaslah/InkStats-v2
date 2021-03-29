@@ -1,4 +1,4 @@
-const { InkStats } = require('../dist/module') // Require InkStats
+const { InkStats } = require('../dist/index') // Require InkStats
 
 /**
  * Makes a New InkStats Instance

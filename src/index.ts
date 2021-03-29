@@ -1,2 +1,3 @@
-import { InkStats } from "./module"
-export default InkStats
+export * from "./module"
+export * as StatsModule from "./StatsModule"
+export * from "./ms"

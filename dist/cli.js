@@ -4,6 +4,7 @@ const config_1 = require("./config");
 const app_1 = require("./app");
 const chalk_1 = require("./functions/chalk");
 const command_line_usage_1 = require("./functions/command_line_usage");
+const console_stats_1 = require("./console-stats");
 const commandLineUsage = require('command-line-usage');
 const logger = require('morgan');
 const InkStatsName = config_1.appName;
@@ -57,5 +58,17 @@ yargs_1.default(hideBin(process.argv))
     alias: 'n',
     type: 'boolean',
     description: 'Removes Color from the CLI'
+})
+    .command('stats [stat]', 'shows you computer stats', (yargs) => {
+    yargs
+        .positional('stat', {
+        describe: 'sets the stat you want to see',
+        alias: 's',
+        default: 'all'
+    });
+}, (argv) => {
+    if (argv.stat === 'all') {
+        console_stats_1.default();
+    }
 })
     .argv;

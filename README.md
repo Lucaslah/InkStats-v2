@@ -53,18 +53,19 @@
 - CPU Information
 - Platform
 - Computer Uptime
-- More Coming soon
+- Hostname
+- More Coming Soon
 
-## Upcomimg Feachers
-- `stats` command, it will show you computer stats on you command line
-- Module Update, use the module to easly get computer stats in your nodejs project
-- A few other random feachers
 
 ## Getting Started: CLI
 1. Install InkStats v2 [See Installing Globlly](#installing-globlly)
-2. In your Terminal run `inkstats-v2 serve` to start a basic InkStats Server
-3. Read [CLI Options](#cli-options) for more info on the CLI
+### Web Server
 
+1. In your Terminal run `inkstats-v2 serve` to start a basic InkStats Server
+2. Read [CLI Options](#cli-options) for more info on the CLI
+### CLI Stats
+1. In your Terminal run `inkstats stats` to see all you basic computer stats.
+2. Read [CLI Options](#cli-options) for more info on the CLI
 
 ## Getting Started: Module
 1. Install InkStats v2 (Module)

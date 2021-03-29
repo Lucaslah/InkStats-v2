@@ -3,6 +3,7 @@ import app from './app'
 
 import chalk_init from './functions/chalk'
 import sections from './functions/command_line_usage'
+import console_stats from "./console-stats"
 
 const commandLineUsage = require('command-line-usage')
 
@@ -76,6 +77,19 @@ yargs(hideBin(process.argv))
     alias: 'n',
     type: 'boolean',
     description: 'Removes Color from the CLI'
+  })
+
+  .command('stats [stat]', 'shows you computer stats', (yargs) => {
+    yargs
+      .positional('stat', {
+        describe: 'sets the stat you want to see',
+        alias: 's',
+        default: 'all'
+      })
+  }, (argv) => {
+    if (argv.stat === 'all') {
+      console_stats()
+    }
   })
 
   .argv
