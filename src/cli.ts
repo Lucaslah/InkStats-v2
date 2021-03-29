@@ -3,7 +3,7 @@ import app from './app'
 
 import chalk_init from './functions/chalk'
 import sections from './functions/command_line_usage'
-import console_stats from "./console-stats"
+import console_stats from "./functions/console-stats"
 
 const commandLineUsage = require('command-line-usage')
 

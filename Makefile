@@ -10,7 +10,7 @@ test: ;@echo "Testing ${PROJECT}....."; \
 	yarn test 
 
 server : ;@echo "Starting ${PROJECT}....."; \
-	node . serve
+	node ./dist/cli.js serve
 
 install: ;@echo "Installing ${PROJECT}....."; \
 	yarn install

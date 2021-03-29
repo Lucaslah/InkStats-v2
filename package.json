@@ -52,7 +52,7 @@
         "scripts:git": "npx ts-node scripts/git.ts",
         "testing:build": "yarn build && node . serve -d",
         "test": "jest",
-        "start:production": "node . serve"
+        "start:production": "node ./dist/cli.js"
     },
     "dependencies": {
         "@types/node": "^14.14.31",
