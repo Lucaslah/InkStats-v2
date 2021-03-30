@@ -5,6 +5,10 @@ import chalk_init from './functions/chalk'
 import sections from './functions/command_line_usage'
 import console_stats from "./functions/console-stats"
 
+import { ConsoleLog } from "./functions/console_log"
+
+const clientLog = new ConsoleLog({ number: 1 })
+
 const commandLineUsage = require('command-line-usage')
 
 const logger = require('morgan');
@@ -79,17 +83,34 @@ yargs(hideBin(process.argv))
     description: 'Removes Color from the CLI'
   })
 
-  .command('stats [stat]', 'shows you computer stats', (yargs) => {
+  .command('stats [stats]', 'shows you computer stats', (yargs) => {
     yargs
-      .positional('stat', {
+      .positional('stats', {
         describe: 'sets the stat you want to see',
         alias: 's',
         default: 'all'
       })
   }, (argv) => {
-    if (argv.stat === 'all') {
+    if (argv.stats === 'all') {
       console_stats()
+    } else if (argv.stats === 'totalram') {
+        clientLog.stats('totalram')
+    } else if (argv.stats === 'platform') {
+        clientLog.stats('platform')
+    } else if (argv.stats === 'CPU_model') {
+      clientLog.stats('CPU_model')
+    } else if (argv.stats === 'CPU_speed') {
+      clientLog.stats('CPU_speed')
+    } else if (argv.stats === 'CPU_cores') {
+      clientLog.stats('CPU_cores')
+    } else if (argv.stats === 'sysUptime') {
+      clientLog.stats('sysUptime')
+    } else if (argv.stats === 'hostname') {
+      clientLog.stats('hostname')
+    } else {
+      clientLog.args('Invalid Command')
     }
+
   })
 
   .argv

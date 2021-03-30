@@ -26,7 +26,18 @@ const sections = [
     {
         header: 'Commands',
         content: [
-            `$ ${appConfigName} serve`
+            `-- HTTP Server Commands --`,
+            `$ ${appConfigName} serve`,
+            `-- Stats Commands --`,
+            `$ ${appConfigName} stats`,
+            `$ ${appConfigName} stats all`,
+            `$ ${appConfigName} totalram`,
+            `$ ${appConfigName} stats platform`,
+            `$ ${appConfigName} stats CPU_model`,
+            `$ ${appConfigName} stats CPU_speed`,
+            `$ ${appConfigName} stats CPU_cores`,
+            `$ ${appConfigName} stats sysUptime`,
+            `$ ${appConfigName} stats hostname`,
         ]
     },
     {
@@ -37,12 +48,20 @@ const sections = [
         header: 'Examples',
         content: [
             {
-                desc: '1. Stats the HTTP Server ',
+                desc: '1. Start the HTTP Server ',
                 example: `$ ${appConfigName} serve [port]  starts the server`
             },
             {
                 desc: '2. Debug Mode ',
-                example: `$ ${appConfigName} server --debug`
+                example: `$ ${appConfigName} serve --debug`
+            },
+            {
+                desc: '3. Show Stats on your CLI ',
+                example: `$ ${appConfigName} stats all`
+            },
+            {
+                desc: '4. Show certain stat on your CLI ',
+                example: `$ ${appConfigName} stats platform`
             }
         ]
     },
