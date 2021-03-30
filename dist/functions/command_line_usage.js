@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const config_1 = require("../config");
-const appConfigName = config_1.appName.toLowerCase();
+const appConfigName1 = config_1.appName.toLowerCase();
+const appConfigName = appConfigName1 + '-v2';
 const optionDefinitions = [
     {
         name: 'help',
@@ -31,7 +32,7 @@ const sections = [
             `-- Stats Commands --`,
             `$ ${appConfigName} stats`,
             `$ ${appConfigName} stats all`,
-            `$ ${appConfigName} totalram`,
+            `$ ${appConfigName} stats totalram`,
             `$ ${appConfigName} stats platform`,
             `$ ${appConfigName} stats CPU_model`,
             `$ ${appConfigName} stats CPU_speed`,

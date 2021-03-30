@@ -62,10 +62,10 @@
 ### Web Server
 
 1. In your Terminal run `inkstats-v2 serve` to start a basic InkStats Server
-2. Read [CLI Options](#cli-options) for more info on the CLI
+2. See More About the CLI [here](https://github.com/Lucaslah/InkStats-v2/wiki/Getting-Started:-CLI)
 ### CLI Stats
 1. In your Terminal run `inkstats stats` to see all you basic computer stats.
-2. Read [CLI Options](#cli-options) for more info on the CLI
+2. See More About the CLI [here](https://github.com/Lucaslah/InkStats-v2/wiki/Getting-Started:-CLI)
 
 ## Getting Started: Module
 1. Install InkStats v2 (Module)
@@ -112,35 +112,13 @@ server.start()
 server.kill()
 ```
 3. For More Examples Check the Examples Folder in the Repo
-4. See all the Module Options [here](#module-options) & Module Commands [here](#module-commands)
+4. See more about the Module [here](https://github.com/Lucaslah/InkStats-v2/wiki/Getting-Started:-Module)
 
 ## Local Development
 1. Clone the Repo: `git clone https://github.com/Lucaslah/InkStats-v2.git`
 2. Chnage to the Dir you cloned: `cd InkStats-v2`
 3. Install Required Stuff: `yarn` or `npm install`
 4. Start the app: `yarn start serve` or `npm start serve`
-
-## CLI Options
-| Flag     | Allies | Usage        | Description                                |   |
-|----------|--------|--------------|--------------------------------------------|---|
-| help     |        | --help       | Shows the Help  Menu                       |   |
-| version  |        | --version    | Shows the InkStats version                 |   |
-| debug    | -d     | --debug      | Runs the app in debug mode                 |   |
-| no_color | -n     | --no_color   | Removes the Color from the CLI             |   |
-| port     | -p     | serve --port | Changes the Port to run InkStats to run on |   |
-
-## Module Options
-| Option  | Usage           | Description                                                                       | Required |
-|---------|-----------------|-----------------------------------------------------------------------------------|----------|
-| port    | port: number    | The Port to Run InkStats On                                                       | n        |
-| message | message: string | A Message to be logged to your Console when InkStats Starts                       | n        |
-| name    | name: string    | Sets the Title of your InkStats Instance, It will show on your InkStats Home Page | n        |
-
-## Module Commands
-| Option | Usage            | Description                |
-|--------|------------------|----------------------------|
-| start  | .start() | Starts the InkStats Server |
-| kill   | .kill()  | Stops the InkStats Server  |
 
 ## Documentation
 See the [Wiki](https://github.com/Lucaslah/InkStats-v2/wiki)

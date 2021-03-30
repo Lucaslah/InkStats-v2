@@ -1,5 +1,5 @@
-const { StatsModule, ms } = require('../dist/index')
-const chalk = require('chalk')
+const { StatsModule, ms } = require('../dist/index') // const { StatsModule, ms } = require('inkstats-v2')
+const chalk = require('chalk') // npm i --save chalk or yarn add chalk
 
 console.log(`${chalk.red('Total Ram:')} ${StatsModule.totalRam}GB`)
 console.log(`${chalk.blue('Platform:')} ${StatsModule.platform}`)

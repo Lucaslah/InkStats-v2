@@ -1,6 +1,8 @@
 import { appName, GitHubLink } from "../config";
 
-const appConfigName = appName.toLowerCase()
+const appConfigName1 = appName.toLowerCase()
+const appConfigName = appConfigName1 + '-v2'
+
 
 
 const optionDefinitions = [
@@ -33,7 +35,7 @@ const sections = [
         `-- Stats Commands --`,
         `$ ${appConfigName} stats`,
         `$ ${appConfigName} stats all`,
-        `$ ${appConfigName} totalram`,
+        `$ ${appConfigName} stats totalram`,
         `$ ${appConfigName} stats platform`,
         `$ ${appConfigName} stats CPU_model`,
         `$ ${appConfigName} stats CPU_speed`,
