@@ -62,7 +62,6 @@
         "chai": "^4.3.0",
         "chalk": "^4.1.0",
         "command-line-usage": "^6.1.1",
-        "discord-console-logger": "^1.0.3",
         "ejs": "^3.1.6",
         "ejs-electron": "^2.1.1",
         "electron": "^11.3.0",
