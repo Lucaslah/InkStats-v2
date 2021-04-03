@@ -9,14 +9,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.InkStats = exports.EventEmiter = void 0;
+exports.InkStats = void 0;
 const app_1 = require("./app");
 const config_1 = require("./config");
 const events_1 = require("events");
-class EventEmiter extends events_1.EventEmitter {
+class EventEmit extends events_1.EventEmitter {
 }
-exports.EventEmiter = EventEmiter;
-const event = new EventEmiter();
+const event = new EventEmit();
 class InkStats {
     constructor(options) {
         /**
