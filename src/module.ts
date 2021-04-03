@@ -1,4 +1,3 @@
-import { type } from "os"
 import app from "./app"
 import { appName } from "./config"
 import { EventEmitter } from "events"
