@@ -4,6 +4,9 @@ const config_1 = require("./config");
 const app_1 = require("./app");
 const chalk_1 = require("./functions/chalk");
 const command_line_usage_1 = require("./functions/command_line_usage");
+const console_stats_1 = require("./functions/console-stats");
+const console_log_1 = require("./functions/console_log");
+const clientLog = new console_log_1.ConsoleLog({ number: 1 });
 const commandLineUsage = require('command-line-usage');
 const logger = require('morgan');
 const InkStatsName = config_1.appName;
@@ -57,5 +60,41 @@ yargs_1.default(hideBin(process.argv))
     alias: 'n',
     type: 'boolean',
     description: 'Removes Color from the CLI'
+})
+    .command('stats [stats]', 'shows you computer stats', (yargs) => {
+    yargs
+        .positional('stats', {
+        describe: 'sets the stat you want to see',
+        alias: 's',
+        default: 'all'
+    });
+}, (argv) => {
+    if (argv.stats === 'all') {
+        console_stats_1.default();
+    }
+    else if (argv.stats === 'totalram') {
+        clientLog.stats('totalram');
+    }
+    else if (argv.stats === 'platform') {
+        clientLog.stats('platform');
+    }
+    else if (argv.stats === 'CPU_model') {
+        clientLog.stats('CPU_model');
+    }
+    else if (argv.stats === 'CPU_speed') {
+        clientLog.stats('CPU_speed');
+    }
+    else if (argv.stats === 'CPU_cores') {
+        clientLog.stats('CPU_cores');
+    }
+    else if (argv.stats === 'sysUptime') {
+        clientLog.stats('sysUptime');
+    }
+    else if (argv.stats === 'hostname') {
+        clientLog.stats('hostname');
+    }
+    else {
+        clientLog.args('Invalid Command');
+    }
 })
     .argv;

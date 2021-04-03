@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.hostname = exports.sysUptime = exports.CPU_cores = exports.CPU_speed = exports.CPU_model = exports.platform = exports.totalRam = void 0;
+exports.totalRam = 'TotalRam';
+exports.platform = 'Platform';
+exports.CPU_model = 'CPU Model';
+exports.CPU_speed = 'CPU Speed';
+exports.CPU_cores = 'CPU Cores';
+exports.sysUptime = 'System Uptime';
+exports.hostname = 'Hostname';

@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.hostname = exports.sysUptime = exports.platform = exports.CPU_model = exports.CPU_speed = exports.CPU_cores = exports.totalRam = void 0;
+const stats_1 = require("./stats");
+Object.defineProperty(exports, "totalRam", { enumerable: true, get: function () { return stats_1.totalRam; } });
+Object.defineProperty(exports, "CPU_cores", { enumerable: true, get: function () { return stats_1.CPU_cores; } });
+Object.defineProperty(exports, "CPU_speed", { enumerable: true, get: function () { return stats_1.CPU_speed; } });
+Object.defineProperty(exports, "CPU_model", { enumerable: true, get: function () { return stats_1.CPU_model; } });
+Object.defineProperty(exports, "platform", { enumerable: true, get: function () { return stats_1.platform; } });
+Object.defineProperty(exports, "sysUptime", { enumerable: true, get: function () { return stats_1.sysUptime; } });
+Object.defineProperty(exports, "hostname", { enumerable: true, get: function () { return stats_1.hostname; } });

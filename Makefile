@@ -1,23 +1,24 @@
 PROJECT = "InkStats"
+MANAGER= "yarn" # Yarn or npm
 
 
 all: install test server
 
 debug: ;@echo "Debuging ${PROJECT}....."; \
-	yarn start serve --debug
+	${MANAGER} start serve --debug
 
 test: ;@echo "Testing ${PROJECT}....."; \
-	yarn test 
+	${MANAGER} test 
 
 server : ;@echo "Starting ${PROJECT}....."; \
-	node . serve
+	node ./dist/cli.js serve
 
 install: ;@echo "Installing ${PROJECT}....."; \
-	yarn install
+	${MANAGER} install
 
 update: ;@echo "Updating ${PROJECT}....."; \
 	git pull --rebase; \
-	yarn install
+	${MANAGER} install
 
 clean : ;
 	rm -rf node_modules

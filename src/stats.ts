@@ -1,5 +1,4 @@
-const os = require("os")
-const ms = require('ms');
+import * as os from "os"
 
  // Get MEM Info:
  var total_memory = os.totalmem();
@@ -16,6 +15,7 @@ const ms = require('ms');
  total_memory = total_memory % 1024;
  
  const core = os.cpus()[0];
+ const namehost = os.hostname()
 
  const ramTotal = total_mem_in_gb
  const platform1 = os.type() || process.platform
@@ -31,3 +31,4 @@ const ms = require('ms');
  export const CPU_speed: number = speedCPU
  export const CPU_cores: number = coresCPU
  export const sysUptime: number = uptimesys
+ export const hostname: string = namehost

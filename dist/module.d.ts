@@ -1,3 +1,7 @@
+/// <reference types="node" />
+import { EventEmitter } from "events";
+export declare class EventEmiter extends EventEmitter {
+}
 interface Options {
     port?: number;
     name?: string;

@@ -1,4 +1,4 @@
-import { InkStats } from "../dist/module"
+import { InkStats } from "../dist/index"
 
 const server = new InkStats({
     name: 'TypeScript Example',
