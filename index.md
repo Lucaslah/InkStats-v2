@@ -1,5 +1,5 @@
 <h1 align="center">
-<img alt="img" src="2EA53BD8-7D9C-41CC-814C-3DE91F4F231B.png">
+<img alt="img" src="https://github.com/Lucaslah/InkStats-v2/blob/main/img/InkStats.png">
 </h1>
 <p align="center">
   A Nodejs Server Stats & Information app.
