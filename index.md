@@ -51,7 +51,7 @@
 
 ## Getting Started: Module
 1. Install InkStats v2 (Module)
-2. Make a New InkStats Instance in your nodejs project
+2. Make a New InkStats Instance in your Node.js project
 ```javascript
 // InkStats Module Example
 
@@ -95,15 +95,6 @@ server.kill()
 ```
 3. For More Examples Check the Examples Folder in the Repo
 4. See more about the Module [here](https://github.com/Lucaslah/InkStats-v2/wiki/Getting-Started:-Module)
-
-## Local Development
-1. Clone the Repo: `git clone https://github.com/Lucaslah/InkStats-v2.git`
-2. Chnage to the Dir you cloned: `cd InkStats-v2`
-3. Install Required Stuff: `yarn` or `npm install`
-4. Start the app: `yarn start serve` or `npm start serve`
-2. Chnage to the Dir you cloned: `cd InkStats-v2`
-3. Install Required Stuff: `yarn` or `npm install`
-4. Start the app: `yarn start serve` or `npm start serve`
 
 ## Documentation
 See the [Wiki](https://github.com/Lucaslah/InkStats-v2/wiki)
