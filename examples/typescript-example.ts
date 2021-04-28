@@ -1,6 +1,6 @@
 import { InkStats } from "../dist/index"
 
-const server = new InkStats({
+const server: InkStats = new InkStats({
     name: 'TypeScript Example',
     port: 4444,
     message: 'TypeScript Example Working!!!'

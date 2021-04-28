@@ -14,3 +14,4 @@ exports.StatsModule = void 0;
 __exportStar(require("./module"), exports);
 exports.StatsModule = require("./StatsModule");
 __exportStar(require("./ms"), exports);
+__exportStar(require("./log"), exports);

@@ -12,10 +12,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.InkStats = void 0;
 const app_1 = require("./app");
 const config_1 = require("./config");
-const events_1 = require("events");
-class EventEmit extends events_1.EventEmitter {
-}
-const event = new EventEmit();
 class InkStats {
     constructor(options) {
         /**
@@ -39,6 +35,9 @@ class InkStats {
                 str = str.replace('{port}', `${port}`);
                 this.message = str;
             }
+            else {
+                return;
+            }
             if (!this.name) {
                 this.name = config_1.appName;
             }
@@ -49,7 +48,7 @@ class InkStats {
          * Starts your InkStats Instance
          */
         this.start = () => {
-            event.emit('ready');
+            // this.emit('ready')
             this.checks();
             this.expressServer();
         };

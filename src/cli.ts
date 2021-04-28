@@ -8,6 +8,7 @@ import console_stats from "./functions/console-stats"
 import { ConsoleLog } from "./functions/console_log"
 
 const clientLog = new ConsoleLog({ number: 1 })
+import { readdirSync, stat } from "fs"
 
 const commandLineUsage = require('command-line-usage')
 
@@ -25,7 +26,6 @@ const appport = process.env.PORT || port || 8080
 
 const usageargs = process.argv.slice(2)
 if (!usageargs[0]) console.log(commandLineUsage(sections))
-
 
 yargs(hideBin(process.argv))
 .scriptName(CLI_name)
@@ -113,4 +113,4 @@ yargs(hideBin(process.argv))
 
   })
 
-  .argv
+  .argv;

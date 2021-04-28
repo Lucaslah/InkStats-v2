@@ -1,10 +1,5 @@
 import app from "./app"
 import { appName } from "./config"
-import { EventEmitter } from "events"
-
-class EventEmit extends EventEmitter {}
-
-const event = new EventEmit();
 
 interface Options {
     port?: number
@@ -42,6 +37,8 @@ export class InkStats {
             var str = this.message
             str = str.replace('{port}', `${port}`)
             this.message = str
+        } else {
+            return;
         }
 
         if (!this.name) {
@@ -72,7 +69,7 @@ export class InkStats {
      * Starts your InkStats Instance
      */
     public start = () => {
-        event.emit('ready')
+        // this.emit('ready')
         this.checks()
         this.expressServer()
     }
