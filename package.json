@@ -6,8 +6,12 @@
     "bin": "./dist/cli.js",
     "license": "ISC",
     "devDependencies": {
+        "@types/command-line-usage": "^5.0.1",
+        "@types/express": "^4.17.12",
         "@types/jest": "^26.0.21",
+        "@types/morgan": "^1.9.2",
         "@types/ms": "^0.7.31",
+        "@types/node": "^15.6.1",
         "@types/yargs": "^16.0.0",
         "@typescript-eslint/eslint-plugin": "^4.22.0",
         "@typescript-eslint/parser": "^4.22.0",
@@ -54,8 +58,6 @@
         "start:production": "node ./dist/cli.js"
     },
     "dependencies": {
-        "@types/node": "^15.0.1",
-        "@types/yargs": "^16.0.0",
         "chalk": "^4.1.0",
         "command-line-usage": "^6.1.1",
         "ejs": "^3.1.6",

@@ -1,14 +1,15 @@
-import app from "./app"
-import { appName } from "./config"
+import app from "./app";
+import { appName } from "./config";
+import EventEmitter from "events";
 
 interface Options {
-    port?: number
-    name?: string
-    message?: string
+    port?: number;
+    name?: string;
+    message?: string;
 }
 
 
-export class InkStats {
+export class InkStats extends EventEmitter {
     /**
      * The Port for your InkStats Instance to Run On
      */
@@ -23,6 +24,7 @@ export class InkStats {
     public name: string | undefined = appName
 
     constructor(options: Options) {
+        super();
         this.port = options.port;
         this.message = options.message;
         this.name = options.name;
@@ -79,7 +81,7 @@ export class InkStats {
      */
     public kill = async() => {
         // @ts-ignore
-        await process.emit('INKSTATS_STOP')
+        process.emit('INKSTATS_STOP');
     }
 
 }

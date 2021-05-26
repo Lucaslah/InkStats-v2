@@ -8,18 +8,17 @@ import console_stats from "./functions/console-stats"
 import { ConsoleLog } from "./functions/console_log"
 
 const clientLog = new ConsoleLog({ number: 1 })
-import { readdirSync, stat } from "fs"
 
-const commandLineUsage = require('command-line-usage')
+import commandLineUsage from 'command-line-usage';
 
-const logger = require('morgan');
+import logger from 'morgan';
 
 const InkStatsName = appName
 const CLI_name = InkStatsName.toLowerCase()
 
 // Yargs
 import yargs, { global } from 'yargs'
-const { hideBin } = require('yargs/helpers')
+import { hideBin } from 'yargs/helpers';
 
 const appport = process.env.PORT || port || 8080
 
@@ -40,8 +39,6 @@ yargs(hideBin(process.argv))
   }, (argv) => {
 
     if (argv.no_color) {
-
-      // @ts-ignore
       app.listen(argv.port, () => {
         console.log(`${InkStatsName} is Running at: http://localhost:${argv.port}`);
     });
@@ -51,8 +48,6 @@ yargs(hideBin(process.argv))
     const CLI_color = process.env.run_with_color || run_with_color
 
     if (CLI_color) {
-
-      // @ts-ignore
         app.listen(argv.port, () => {
     
             chalk_init(argv)
@@ -60,8 +55,6 @@ yargs(hideBin(process.argv))
             });
     
     } else {
-
-      // @ts-ignore
         app.listen(argv.port, () => {
             console.log(`${InkStatsName} is Running at: http://localhost:${argv.port}`);
         });
@@ -69,7 +62,10 @@ yargs(hideBin(process.argv))
       }
 }
 
-    if (argv.debug) console.info(`Running ${InkStatsName} in Debeg Mode`) + app.use(logger('dev'));
+    if (argv.debug) {
+      console.info(`Running ${InkStatsName} in Debeg Mode`);
+      app.use(logger('dev'));
+  }
 
 
   })
