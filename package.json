@@ -27,7 +27,7 @@
         "ts-node": "^9.1.1",
         "ts-node-dev": "^1.1.6",
         "typescript": "^4.2.4",
-        "yargs": "^16.2.0"
+        "yargs": "^17.0.1"
     },
     "description": "A Nodejs Server Stats & Information app.",
     "author": "lucaslah",
@@ -66,6 +66,6 @@
         "morgan": "^1.10.0",
         "npm": "^7.6.0",
         "reflect-metadata": "^0.1.13",
-        "yargs": "^16.2.0"
+        "yargs": "^17.0.1"
     }
 }
